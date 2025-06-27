@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications – Caroline El Jazmi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Caroline El Jazmi</div>
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="#">Blog</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="text-content">
+      <h1>Publications</h1>
+      <p>Peer-reviewed research and contributions in machine learning</p>
+
+      <div class="publication-list">
+
+        <!-- Publication 1 Placeholder -->
+        <div class="publication">
+          <h2 class="pub-title">Computational Attestations of Polynomial Integrity Towards Verifiable Back-Propagation</h2>
+          <p class="pub-authors">Dustin Ray, Caroline El Jazmi</p>
+          <p class="pub-venue">Future Conference Technology (FTC), 2025</p>
+          <p class="pub-venue">Cryptology ePrint Archive, 2025</p>
+          <a href="https://eprint.iacr.org/2025/1113" target="_blank" class="pub-link">View Paper →</a>
+
+          <details class="abstract-dropdown">
+            <summary>Show Abstract</summary>
+            <p class="pub-abstract">
+                Recent advancements in machine learning accuracy and utility have been driven by the effective combination of sophisticated models with high-performance computational scaling. As the development of large-scale models shifts away from commodity hardware to outsourced computation, it becomes paramount to ensure that the training process is executed with integrity and transparency. This encompasses verifying that adequate computational resources were expended and that the resulting model is accurate, rather than the product of skipped steps or resource-saving shortcuts by the external provider. Building on our previous efforts, which demonstrated the computational feasibility of using this system to argue correctness for differentially-private linear regression, we extend those results to achieve fully provable back-propagation—a cornerstone operation in modern machine learning training. Our system achieves complete zero-knowledge, revealing nothing about the input data during training, and ensures quantum security by relying on no weak cryptographic primitives. Efficiency is substantially increased through the use of a fixed-point decimal representation, reducing the computational overhead typically associated with floating-point arithmetic. Notably, our solution is doubly efficient, achieving a logarithmic-time verifier and a linear-time prover. Implemented entirely in Rust without reliance on external machine learning libraries, and executed within a cryptographically secure virtual machine, this work represents a significant advancement toward verifiable, secure, and efficient outsourced machine learning computations.
+            </p>
+          </details>
+        </div>
+
+        <!-- Publication 2 Placeholder -->
+        <div class="publication">
+          <h2 class="pub-title">Large Language Model-Powered Conversational Agent Delivering Problem-Solving Therapy (PST) for Family Caregivers: Enhancing Empathy and Therapeutic Alliance Using In-Context Learning</h2>
+          <p class="pub-authors">Liying Wang, Ph.D., Daffodil Carrington, M.S., Daniil Filienko, M.S., Caroline El Jazmi, M.S., Serena Jinchen Xie, M.S., Martine De Cock, Ph.D., Sarah Iribarren, Ph.D., Weichao Yuwen, Ph.D</p>
+          <p class="pub-venue">American Medical Informatics Association (AMIA), 2025</p>
+          <p class="pub-venue">arXiv, 2025</p>
+          <a href="https://arxiv.org/abs/2506.11376" target="_blank" class="pub-link">View Paper →</a>
+
+          <details class="abstract-dropdown">
+            <summary>Show Abstract</summary>
+            <p class="pub-abstract">
+                Family caregivers often face substantial mental health challenges due to their multifaceted roles and limited resources. This study explored the potential of a large language model (LLM)-powered conversational agent to deliver evidence-based mental health support for caregivers, specifically Problem-Solving Therapy (PST) integrated with Motivational Interviewing (MI) and Behavioral Chain Analysis (BCA). A within-subject experiment was conducted with 28 caregivers interacting with four LLM configurations to evaluate empathy and therapeutic alliance. The best-performing models incorporated Few-Shot and Retrieval-Augmented Generation (RAG) prompting techniques, alongside clinician-curated examples. The models showed improved contextual understanding and personalized support, as reflected by qualitative responses and quantitative ratings on perceived empathy and therapeutic alliances. Participants valued the model's ability to validate emotions, explore unexpressed feelings, and provide actionable strategies. However, balancing thorough assessment with efficient advice delivery remains a challenge. This work highlights the potential of LLMs in delivering empathetic and tailored support for family caregivers.
+            </p>
+          </details>
+        </div>
+
+
+
+        <!-- Publication 3 -->
+        <div class="publication">
+          <h2 class="pub-title">Computational Attestations of Polynomial Integrity Towards Verifiable Machine-Learning</h2>
+          <p class="pub-authors">Dustin Ray, Caroline El Jazmi</p>
+          <p class="pub-venue">Future Conference Technology (FTC), 2024</p>
+          <p class="pub-venue">arXiv, 2025</p>
+          <p class="pub-venue">Cryptology ePrint Archive, 2024</p>
+          <a href="https://arxiv.org/abs/2506.11458" target="_blank" class="pub-link">View Paper →</a>
+
+          <details class="abstract-dropdown">
+            <summary>Show Abstract</summary>
+            <p class="pub-abstract">
+                Machine-learning systems continue to advance at a rapid pace, demonstrating remarkable utility in various fields and disciplines. As these systems continue to grow in size and complexity, a nascent industry is emerging which aims to bring machine-learning-as-a-service (MLaaS) to market. Outsourcing the operation and training of these systems to powerful hardware carries numerous advantages, but challenges arise when privacy and the correctness of work carried out must be ensured. Recent advancements in the field of zero-knowledge cryptography have led to a means of generating arguments of integrity for any computation, which in turn can be efficiently verified by any party, in any place, at any time. In this work we prove the correct training of a differentially-private (DP) linear regression over a dataset of 50,000 samples on a single machine in less than 6 minutes, verifying the entire computation in 0.17 seconds. To our knowledge, this result represents the fastest known instance in the literature of provable-DP over a dataset of this size. We believe this result constitutes a key stepping-stone towards end-to-end private MLaaS.
+            </p>
+          </details>
+        </div>
+
+        <!-- Publication 4 Placeholder -->
+        <div class="publication">
+          <h2 class="pub-title">Toward Large Language Models as a Therapeutic Tool: Comparing Prompting Techniques to Improve GPT-Delivered Problem-Solving Therapy</h2>
+          <p class="pub-authors">Daniil Filienko, Yinzhou Wang, Caroline El Jazmi, Serena Xie, Trevor Cohen, Martine De Cock, Weichao Yuwen</p>
+          <p class="pub-venue">American Medical Informatics Association (AMIA), 2024</p>
+          <p class="pub-venue">arXiv, 2024</p>
+          <a href="https://arxiv.org/abs/2409.00112" target="_blank" class="pub-link">View Paper →</a>
+
+          <details class="abstract-dropdown">
+            <summary>Show Abstract</summary>
+            <p class="pub-abstract">
+                While Large Language Models (LLMs) are being quickly adapted to many domains, including healthcare, their strengths and pitfalls remain under-explored. In our study, we examine the effects of prompt engineering to guide Large Language Models (LLMs) in delivering parts of a Problem-Solving Therapy (PST) session via text, particularly during the symptom identification and assessment phase for personalized goal setting. We present evaluation results of the models' performances by automatic metrics and experienced medical professionals. We demonstrate that the models' capability to deliver protocolized therapy can be improved with the proper use of prompt engineering methods, albeit with limitations. To our knowledge, this study is among the first to assess the effects of various prompting techniques in enhancing a generalist model's ability to deliver psychotherapy, focusing on overall quality, consistency, and empathy. Exploring LLMs' potential in delivering psychotherapy holds promise with the current shortage of mental health professionals amid significant needs, enhancing the potential utility of AI-based and AI-enhanced care services.
+            </p>
+          </details>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Caroline El Jazmi. All rights reserved.</p>
+  </footer>
+</body>
+</html>

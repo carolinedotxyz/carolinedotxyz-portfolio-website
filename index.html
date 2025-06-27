@@ -3,34 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name – Software Engineer</title>
+  <title>Caroline El Jazmi – Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
-    <div class="logo">YourName</div>
+    <div class="logo">Caroline El Jazmi</div>
     <nav class="nav">
       <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
+      <a href="publications.html">Publications</a> 
+      <a href="blog.html">Blog</a>
     </nav>
   </header>
 
   <main class="main">
     <div class="intro">
       <div class="text-content">
-        <h1>Hello, I'm <span>Your Name</span></h1>
-        <p>I'm a software engineer building clean, efficient, and thoughtful digital experiences.</p>
+        <h1>Hello, I'm <span>Caroline El Jazmi</span></h1>
+        <p>
+          I'm a machine learning engineer and researcher specializing in multimodal computer vision models and LLM-powered systems, with published work in therapeutic AI and verifiable machine learning.
+        </p>
+
+        <!-- Contact section now inside .text-content -->
+        <section class="contact-section">
+          <h2>Contact & Collaborate</h2>
+
+          <!-- LinkedIn button first -->
+          <a
+            href="https://www.linkedin.com/in/caroline-ej/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="linkedin-btn"
+          >
+            Connect on LinkedIn
+          </a>
+
+          <!-- Reveal email form button -->
+          <button class="reveal-form-btn" type="button">Send a Message</button>
+
+          <!-- Contact Form Wrapper with close button -->
+          <div class="contact-form-wrapper">
+            <button class="close-form-btn" type="button" aria-label="Close contact form">×</button>
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xanjayzz"
+              method="POST"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address"
+                autocomplete="off"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your message"
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </section>
       </div>
-      <div class="profile-pic">
-        <img src="profile-placeholder.jpg" alt="Profile picture of Your Name" />
+
+      <div class="profile-pic-wrapper">
+        <div class="ripple-circle circle-1"></div>
+        <div class="ripple-circle circle-2"></div>
+        <div class="ripple-circle circle-3"></div>
+        <div class="ripple-circle circle-4"></div>
+        <div class="ripple-circle circle-5"></div>
+        <div class="ripple-circle circle-6"></div>
+        <div class="ripple-circle circle-7"></div>
+        <div class="ripple-circle circle-8"></div>
+        <div class="ripple-circle circle-9"></div>
+        <div class="ripple-circle circle-10"></div>
+        <div class="profile-pic">
+          <img src="images/pp.png" alt="Profile picture of Caroline El Jazmi" />
+        </div>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Caroline El Jazmi. All rights reserved.</p>
   </footer>
+
+<script>
+  const toggleBtn = document.querySelector(".reveal-form-btn");
+  const formWrapper = document.querySelector(".contact-form-wrapper");
+  const contactForm = document.querySelector(".contact-form");
+  const closeBtn = document.querySelector(".close-form-btn");
+
+  toggleBtn.addEventListener("click", () => {
+    formWrapper.classList.add("open");
+    toggleBtn.style.display = "none";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    formWrapper.classList.remove("open");
+    toggleBtn.style.display = "inline-block";
+  });
+
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(contactForm);
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      alert("Thanks for your message! I'll get back to you soon.");
+      contactForm.reset();
+      formWrapper.classList.remove("open");
+      toggleBtn.style.display = "inline-block";
+    } else {
+      alert("Something went wrong. Please try again later.");
+    }
+  });
+</script>
+
+
+
+
 </body>
 </html>
