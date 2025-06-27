@@ -1,0 +1,106 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #121212;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: #ffffff;
+}
+
+/* Main section */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  min-height: calc(100vh - 160px);
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.text-content span {
+  color: #ffffff;
+  font-weight: 700;
+}
+.text-content p {
+  color: #aaaaaa;
+  max-width: 500px;
+}
+
+/* Profile Image */
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #121212;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-content h1 {
+    font-size: 2rem;
+  }
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+  .nav a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
