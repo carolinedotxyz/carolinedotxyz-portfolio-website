@@ -356,9 +356,7 @@ body {
   border-radius: 12px;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  min-width: 220px;
-  max-width: 300px;
-  width: fit-content;
+  width: 240px;
   justify-content: flex-start;
   letter-spacing: 0.01em;
 }
