@@ -56,6 +56,11 @@ body {
   color: #ffffff;
 }
 
+.nav a.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
 
 /* ======================================================
    MAIN CONTENT
