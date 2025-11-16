@@ -295,7 +295,8 @@ body {
    BUTTON STYLES
 ====================================================== */
 .linkedin-btn,
-.reveal-form-btn {
+.reveal-form-btn,
+.github-btn {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.65rem 1.4rem;
@@ -317,6 +318,18 @@ body {
 
 .linkedin-btn:hover {
   background-color: #0063a3;
+}
+
+.github-btn {
+  background-color: #24292e;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.github-btn:hover {
+  background-color: #1f2328;
 }
 
 
@@ -464,6 +477,7 @@ html, body {
 
   .linkedin-btn,
   .reveal-form-btn,
+  .github-btn,
   .contact-form button {
     font-size: 0.9rem;
     width: 100%;
